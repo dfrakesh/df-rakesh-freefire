@@ -15,3 +15,73 @@ body{font-family:Arial,Helvetica,sans-serif;background:#070707;color:#fff}
 .big{font-size:32px;color:#ff5c5c;margin-top:8px}
 .register{text-align:center}
 .footer{text-align:center;padding:28px;color:#999;border-top:1px solid #222}
+.admin-page{
+  min-height:100vh;
+  background:#070707;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:30px;
+}
+
+.admin-box{
+  width:100%;
+  max-width:600px;
+  background:#111;
+  border:1px solid #5a0000;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 0 30px rgba(255,59,59,.15);
+}
+
+.admin-box h1{
+  color:#ff3b3b;
+  margin-bottom:25px;
+}
+
+.admin-box input{
+  width:100%;
+  padding:14px;
+  margin:8px 0 18px;
+  background:#070707;
+  border:1px solid #444;
+  border-radius:8px;
+  color:#fff;
+  font-size:16px;
+}
+
+.admin-box label{
+  display:block;
+  color:#ddd;
+  font-weight:bold;
+}
+
+.admin-box button{
+  border:none;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.admin-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logout{
+  background:#333;
+  color:white;
+  padding:10px 15px;
+  border-radius:8px;
+}
+
+.save-btn{
+  width:100%;
+  margin-top:10px;
+}
+
+#loginStatus,
+#saveStatus{
+  margin-top:15px;
+  color:#ff5c5c;
+}
