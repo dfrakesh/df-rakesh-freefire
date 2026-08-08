@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DF RAKESH ESPORTS | Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <div class="admin-page">
+
+    <div id="loginBox" class="admin-box">
+      <h1>Admin Login</h1>
+
+      <input id="email" type="email" placeholder="Admin Email">
+      <input id="password" type="password" placeholder="Password">
+
+      <button class="btn" onclick="login()">Login</button>
+
+      <p id="loginStatus"></p>
+    </div>
+
+    <div id="panel" class="admin-box" style="display:none;">
+
+      <div class="admin-header">
+        <h1>Admin Panel</h1>
+        <button class="logout" onclick="logout()">Logout</button>
+      </div>
+
+      <label>Registration Link</label>
+      <input id="registration_link" type="text">
+
+      <label>Prize Pool</label>
+      <input id="prize_pool" type="text">
+
+      <label>Mode</label>
+      <input id="mode" type="text">
+
+      <label>Tournament Date</label>
+      <input id="tournament_date" type="text">
+
+      <label>Registration Status</label>
+      <input id="registration_status" type="text">
+
+      <label>Entry Fee</label>
+      <input id="entry_fee" type="text">
+
+      <label>Room ID & Password Info</label>
+      <input id="room_info" type="text">
+
+      <label>QR Code Image URL</label>
+      <input id="qr_url" type="text">
+
+      <button class="btn save-btn" onclick="saveSettings()">
+        Save Changes
+      </button>
+
+      <p id="saveStatus"></p>
+
+    </div>
+
+  </div>
+
+  <script src="admin.js"></script>
+
+</body>
+</html>
