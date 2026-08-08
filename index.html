@@ -6,54 +6,108 @@
   <title>DF RAKESH ESPORTS | Free Fire Tournament</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header class="hero">
     <nav class="nav">
       <div class="logo">DF RAKESH ESPORTS</div>
       <a class="btn small" href="#register">Register</a>
     </nav>
+
     <div class="hero-content">
       <h1>FREE FIRE CHAMPIONSHIP</h1>
       <p>Battle. Win. Dominate.</p>
+
       <div id="countdown" class="countdown"></div>
+
       <a class="btn" href="#register">Join Tournament</a>
     </div>
   </header>
 
+
   <section class="section cards">
+
     <div class="card">
       <h3>Prize Pool</h3>
-      <p class="big">₹10,000</p>
+      <p id="prize_pool" class="big">Loading...</p>
     </div>
+
     <div class="card">
       <h3>Mode</h3>
-      <p class="big">Squad</p>
+      <p id="mode" class="big">Loading...</p>
     </div>
+
     <div class="card">
       <h3>Date</h3>
-      <p class="big">20 Aug 2026</p>
+      <p id="tournament_date" class="big">Loading...</p>
     </div>
+
   </section>
+
 
   <section class="section">
+
     <h2>Upcoming Tournament</h2>
+
     <div class="tournament">
-      <p><strong>Registration:</strong> Open</p>
-      <p><strong>Entry Fee:</strong> Free</p>
-      <p><strong>Room ID &amp; Password:</strong> Sent before match</p>
+
+      <p>
+        <strong>Registration:</strong>
+        <span id="registration_status">Loading...</span>
+      </p>
+
+      <p>
+        <strong>Entry Fee:</strong>
+        <span id="entry_fee">Loading...</span>
+      </p>
+
+      <p>
+        <strong>Room ID &amp; Password:</strong>
+        <span id="room_info">Loading...</span>
+      </p>
+
     </div>
+
   </section>
 
+
   <section id="register" class="section register">
+
     <h2>Register Your Team</h2>
-    <p>Replace the link below with your Google Form or WhatsApp registration link.</p>
-    <a class="btn" href="https://wa.me/" target="_blank">Register via WhatsApp</a>
+
+    <p>Join the tournament using the registration link below.</p>
+
+    <a
+      id="registration_link"
+      class="btn"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer">
+      Register Now
+    </a>
+
+    <div id="qr_section" style="display:none; margin-top:30px;">
+
+      <h3>Scan QR Code</h3>
+
+      <img
+        id="qr_image"
+        src=""
+        alt="Registration QR Code"
+        style="max-width:250px; width:100%; margin-top:15px; border-radius:12px;">
+
+    </div>
+
   </section>
+
 
   <footer class="footer">
     <p>© 2026 DF RAKESH ESPORTS. All rights reserved.</p>
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
